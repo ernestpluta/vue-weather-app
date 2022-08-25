@@ -21,13 +21,10 @@ const search = ref('')
 const cities = ref(null)
 const fetchCityData = async () => {
     if(search.value){
-        await axios.get(`https://api.openweathermap.org/geo/1.0/direct?q=${search.value}&limit=8&appid=${process.env.API_KEY}`)
+        await axios.get(`https://api.openweathermap.org/geo/1.0/direct?q=${search.value}&limit=10&appid=${process.env.API_KEY}`)
         .then(result => cities.value = result?.data)
     }
 }
-      watchEffect(() => {
-        fetchCityData()
-    })
 
 
 </script>

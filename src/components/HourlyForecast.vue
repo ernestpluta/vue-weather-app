@@ -1,19 +1,11 @@
 <template>
-    <div class="text-5xl text-center">siema</div>
+    <div class="text-5xl text-center">temp</div>
 </template>
 
 
 <script>
 import axios from 'axios';
-// import dotenv from 'dotenv'
-export default{
-    name: "HourlyForecast",
-    components: {},
-    methods: {
 
-    },
-
-}
 
 </script>
 

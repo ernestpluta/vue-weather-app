@@ -1,14 +1,15 @@
-<script >
-export default {
-    name: 'Home'
-}
-</script>
+
 
 <template>
   <div>
-    home page
+    <search-city/>
   </div>
 </template>
 
+<script setup>
+import SearchCity from '../components/SearchCity.vue';
+</script>
+
 <style scoped>
+
 </style>

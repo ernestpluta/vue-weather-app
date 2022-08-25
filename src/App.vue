@@ -1,22 +1,11 @@
 
 <template>
-  <div>
-  <search-city/>
-
-  <!-- <hourly-forecast/> -->
-  </div>
+    <router-view/>
 </template>
 
-<script>
+<script setup>
 import SearchCity from './components/SearchCity.vue';
 import HourlyForecast from './components/HourlyForecast.vue';
-export default{
-  name: "App",
-  components: { SearchCity, HourlyForecast },
-  methods: {
-
-  },
-}
 </script>
 
 <style scoped>
