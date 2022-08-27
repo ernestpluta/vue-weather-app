@@ -25,6 +25,9 @@ const fetchCityData = async () => {
         .then(result => cities.value = result?.data)
     }
 }
+watchEffect(() => {
+    fetchCityData()
+})
 
 
 </script>
